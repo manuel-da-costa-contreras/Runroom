@@ -14,7 +14,6 @@ const Portfolio = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
       <main>
         <section className={`${styles.billboard} container`}>
           <img src="/sanderson.jpg" />
@@ -92,7 +91,6 @@ const Portfolio = () => {
         <ContactMe />
       </main>
       <ContactModal />
-      <Footer />
     </>
   );
 };

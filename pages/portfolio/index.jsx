@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
 import ContactMe from '../../components/ContactMe';
 import ContactModal from '../../components/ContactModal';
 import styles from '../../styles/Portfolio.module.scss';
@@ -15,7 +13,7 @@ const Portfolio = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      
       <main className="container">
         <section className={styles.billboard}>
           <img src="/sanderson.jpg" />
@@ -95,7 +93,7 @@ const Portfolio = () => {
         <ContactMe />
       </main>
       <ContactModal />
-      <Footer />
+      
     </>
   );
 };
