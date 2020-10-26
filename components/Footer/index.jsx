@@ -14,27 +14,27 @@ const Footer = () => {
           <Logo className={styles.logo} />
         </a>
       </Link>
-      <nav>
+      <nav className={styles.nav}>
         <ul className={styles.navList}>
           <li>
             <Link href="/">
-              <a className={styles.link}>Home</a>
+              <a >Home</a>
             </Link>
           </li>
           <li>
             <Link href="/portfolio">
-              <a className={styles.link}>Portfolio</a>
+              <a >Portfolio</a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a className={styles.link}>Contáctame</a>
+              <a >Contáctame</a>
             </Link>
           </li>
         </ul>
       </nav>
-      <nav>
-        <ul>
+      <nav >
+        <ul className={styles.logoFooter}>
           <li>
             <Behance />
           </li>
