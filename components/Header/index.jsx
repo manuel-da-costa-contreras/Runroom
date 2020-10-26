@@ -29,11 +29,11 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a className={styles.link}>Contáctame</a>
+            <a className={styles.link} onClick={toggleContactModal} >Contáctame</a>
           </li>
         </ul>
       </nav>
-      <div className={styles.trigger}>
+      <div className={styles.trigger} onClick={toggleMenu} >
         {menu && <Cross className={styles.cross} />}
         {!menu && <Menu className={styles.menu} />}
       </div>
