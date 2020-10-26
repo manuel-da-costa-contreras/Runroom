@@ -21,7 +21,7 @@ const Home = () => {
           <img src="/main-image.jpg" />
           <div className={styles.intro}>
             <h1>Hola, soy Jonas Kahnwald, diseñador de interiores</h1>
-            <a className="button" href="#about">
+            <a className="button button--fill" href="#about">
               Sobre mí
             </a>
           </div>
