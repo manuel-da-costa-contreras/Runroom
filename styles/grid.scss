@@ -1,3 +1,55 @@
-.grid {}
+@import "../styles/variables";
 
-.column {}
+.grid {
+    display: grid;
+    grid-template-areas:
+        "column"
+        "column";
+
+    &:first-child {
+        & > .display {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            text-align: center;
+        }
+    }
+}
+
+.column {
+    &:first-child {
+        & > img {
+            height: 19.9rem;
+            width: 30rem;
+            object-fit: cover;
+        }
+    }
+
+    &:last-child {
+        padding-top: 1.5rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 48em) {
+    .grid {
+        grid-template-areas: "column column";
+    }
+
+    .column {
+        &:first-child {
+            & > img {
+                height: 34.9rem;
+                width: 33rem;
+            }
+            padding-right: 45px;
+            max-height: 90rem;
+            max-width: 640px;
+        }
+
+        &:last-child {
+            padding-left: 45px;
+            max-width: 440px;
+            margin: auto 0;
+        }
+    }
+}
